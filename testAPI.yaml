@@ -220,14 +220,14 @@ definitions:
     type: object
     properties:
       owner:
-        type: person
+        $ref: '#/definitions/person'
       id:
         type: integer
       url:
         type: string
       description:
         type: string
-host: ''
-basePath: /myserver.com/testAPI
+host: myserver.com
+basePath: /testAPI
 schemes:
   - http
