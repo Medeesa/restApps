@@ -285,7 +285,14 @@
                     "type": "integer"
                 },
                 "bookmarks": {
-                    "type": "array"
+                    "type": "array",
+                    "xml": {
+                        "name": "bookmark",
+                        "wrapped": true
+                    },
+                    "items": {
+                        "$ref": "#/definitions/bookmark"
+                    }
                 }
             }
         },

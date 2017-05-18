@@ -216,6 +216,11 @@ definitions:
         type: integer
       bookmarks:
         type: array
+        xml:
+          name: bookmark
+          wrapped: true
+        items:
+          $ref: '#/definitions/bookmark'
   bookmark:
     type: object
     properties:
